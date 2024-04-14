@@ -1,0 +1,72 @@
+<!-- <video #video width="640" height="480" autoplay></video>
+<canvas #canvas width="640" height="480"
+        (mousedown)="startDrawing($event)"
+        (mousemove)="draw($event)"
+        (mouseup)="stopDrawing($event)"></canvas>
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display:none;"> -->
+
+<!-- <video #video width="640" height="480" autoplay></video>
+<canvas #canvas width="640" height="480"
+        (mousedown)="startDrawing($event)"
+        (mousemove)="draw($event)"
+        (mouseup)="stopDrawing($event)"></canvas>
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display:none;"> -->
+
+<!-- <video #video width="640" height="480" autoplay></video>
+<canvas #canvas width="640" height="480"
+        (mousemove)="draw($event)"
+        (mouseup)="stopDrawing()"></canvas>
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display:none;"> -->
+
+<!--
+<video #video width="640" height="480" autoplay></video>
+<canvas #canvas width="640" height="480"
+        (mousedown)="startDrawing($event)"
+        (mousemove)="draw($event)"
+        (mouseup)="stopDrawing()"></canvas>
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display:none;"> -->
+
+<!-- <video #video width="640" height="480" autoplay></video>
+<canvas #canvas width="640" height="480"
+        (mousedown)="startMoving($event)"
+        (mousemove)="move($event)"
+        (mouseup)="stopMoving()"
+        (mousedown)="startResizing($event)"
+        (mousemove)="resize($event)"
+        (mouseup)="stopResizing()"></canvas>
+
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display:none;"> -->
+
+<!-- <video #video width="640" height="480" autoplay></video>
+<canvas #canvas width="640" height="480"
+        (mousedown)="startResizing($event)"
+        (mousemove)="resize($event)"
+        (mouseup)="stopResizing()"></canvas>
+
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display:none;"> -->
+<!-- <div style="position: relative; width: 100%; padding-bottom: 80%;"> -->
+<!-- <div style="position: relative; width: 100%; height: 80vh;"> -->
+
+<!-- style="position: absolute; width: 100%; height: 80%; object-fit: cover;" -->
+<video
+  #video
+  autoplay
+  style="position: absolute; top: 0; width: 100%;"
+></video>
+
+<canvas
+  #canvas
+  style="position: absolute; top: 0; width: 100%;"
+  (touchstart)="startResizing($event)"
+  (touchmove)="resize($event)"
+  (touchend)="stopResizing()"
+></canvas>
+
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display: none" />

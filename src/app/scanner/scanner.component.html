@@ -1,0 +1,90 @@
+<!-- <video #video width="640" height="480" autoplay></video>
+<canvas #canvas width="640" height="480"
+        (mousedown)="startDrawing($event)"
+        (mousemove)="draw($event)"
+        (mouseup)="stopDrawing($event)"></canvas>
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display:none;"> -->
+
+<!-- <video #video width="640" height="480" autoplay></video>
+<canvas #canvas width="640" height="480"
+        (mousedown)="startDrawing($event)"
+        (mousemove)="draw($event)"
+        (mouseup)="stopDrawing($event)"></canvas>
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display:none;"> -->
+
+<!-- <video #video width="640" height="480" autoplay></video>
+<canvas #canvas width="640" height="480"
+        (mousemove)="draw($event)"
+        (mouseup)="stopDrawing()"></canvas>
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display:none;"> -->
+
+<!--
+<video #video width="640" height="480" autoplay></video>
+<canvas #canvas width="640" height="480"
+        (mousedown)="startDrawing($event)"
+        (mousemove)="draw($event)"
+        (mouseup)="stopDrawing()"></canvas>
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display:none;"> -->
+
+<!-- <video #video width="640" height="480" autoplay></video>
+<canvas #canvas width="640" height="480"
+        (mousedown)="startMoving($event)"
+        (mousemove)="move($event)"
+        (mouseup)="stopMoving()"
+        (mousedown)="startResizing($event)"
+        (mousemove)="resize($event)"
+        (mouseup)="stopResizing()"></canvas>
+
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display:none;"> -->
+
+<!-- <video #video width="640" height="480" autoplay></video>
+<canvas #canvas width="640" height="480"
+        (mousedown)="startResizing($event)"
+        (mousemove)="resize($event)"
+        (mouseup)="stopResizing()"></canvas>
+
+<button (click)="captureImage()">Capturar Imagen</button>
+<img #capturedImage src="" style="display:none;"> -->
+<!-- <div style="position: relative; width: 100%; padding-bottom: 80%;"> -->
+<!-- <div style="position: relative; width: 100%; height: 80vh;"> -->
+
+<!-- style="position: absolute; width: 100%; height: 80%; object-fit: cover;" -->
+<video
+  #video
+  autoplay
+  style="position: absolute; max-width: 100%; "
+></video>
+
+<canvas
+  #canvas
+  style="position: absolute; max-width: 100%; "
+  (touchstart)="startResizing($event)"
+  (touchmove)="resize($event)"
+  (touchend)="stopResizing()"
+  (mousedown)="startMoving($event)"
+  (mouseup)="stopMoving()"
+  (touchstart)="startTouchMoving($event)"
+  (touchend)="stopTouchMoving()"
+></canvas>
+
+
+<!-- <button (click)="captureImage()">Capturar Imagen</button> -->
+
+<p (click)="captureImage()" >
+  <!-- Agrega un icono de cámara utilizando Font Awesome (o cualquier otra librería de iconos) -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16" style="transform: rotate(-90deg);">
+    <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+    <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+  </svg>
+
+</p>
+
+
+
+<img #capturedImage class="capturedImage" src="" style="display: none" />
+<a class="enlace" #imageUrlLink (click)="copyImageUrlToClipboard()">ImageUrl</a>
